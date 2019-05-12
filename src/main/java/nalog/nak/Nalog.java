@@ -166,18 +166,19 @@ SwingUtilities.invokeLater(new Runnable() {
 	*/
 public void run() { 
 	/*Компонент, на котором располагается окно*/
-JFrame form2 = new JFrame();
+final JFrame form2 = new JFrame();
 /*Панель, на которой располагаются текстовые поля, поле ввода и кнопки.*/
 JPanel panel, panel1; 
 /*Кнопки "Рассчитать" и "В меню" */
 JButton calc,calc2; 
 /*Компоненты, на котором располагается текст*/
-JLabel label_1,label_2,label_3, label_4,label_n,sum_n,sum,label_n1,label_n2,label_n3,label_n4; 
+JLabel label_1,label_2,label_3, label_4,label_n;
+final sum_n,sum,label_n1,label_n2,label_n3,label_n4; 
 /*Текстовое поле, в которое пользователь вводит данные */
-JTextField sum_ok;
+final JTextField sum_ok;
 /*Компонент переключатель (при нажатии на одну из
 таких кнопок ранее нажатая кнопка возвращается в исходное состояние)*/
-JRadioButton rad_13, rad_13_1,rad_15, rad_30, rad_35;
+final JRadioButton rad_13, rad_13_1,rad_15, rad_30, rad_35;
 /*Устанавливает название окна в form2*/
 form2.setTitle("Калькулятор НДФЛ");
 /*Указывает ширину и высоту в form2.*/
@@ -538,7 +539,7 @@ SwingUtilities.invokeLater(new Runnable() {
 	*/
 public void run() { 
 	/* компонент, на котором располагается окно*/
-JFrame form3 = new JFrame(""); 
+final JFrame form3 = new JFrame(""); 
 /*устанавливает название окна*/
 form3.setTitle("Изменение налоговой ставки"); 
 /*указывает ширину и высоту.*/
@@ -567,7 +568,7 @@ label_n5,label_n6,label_n7,label_n8,label_n9,label_n10,
 label_n11,label_n12,label_n13,label_n14,label_n15,label_n16, 
 label_n17,label_n18,label_n121,label_n131,label_2,label_3; 
 /*Текстовое поле в которое администратор вводит данные для изменения */
-JTextField sum_ok,sum_ok1,sum_ok2,sum_ok3,sum_ok4; 
+final JTextField sum_ok,sum_ok1,sum_ok2,sum_ok3,sum_ok4; 
 /*Панель, на которой располагается текстовое поле и кнопки-переключатели*/
 panel2 = new JPanel(); 
 /*Панель, на которой располагается кнопки*/
