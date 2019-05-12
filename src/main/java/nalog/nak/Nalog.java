@@ -173,12 +173,14 @@ JPanel panel, panel1;
 JButton calc,calc2; 
 /*Компоненты, на котором располагается текст*/
 JLabel label_1,label_2,label_3, label_4,label_n;
-final sum_n,sum,label_n1,label_n2,label_n3,label_n4; 
+final JLabel sum_n;
+final JLabel sum;
+JLabel label_n1,label_n2,label_n3,label_n4; 
 /*Текстовое поле, в которое пользователь вводит данные */
 final JTextField sum_ok;
 /*Компонент переключатель (при нажатии на одну из
 таких кнопок ранее нажатая кнопка возвращается в исходное состояние)*/
-final JRadioButton rad_13, rad_13_1,rad_15, rad_30, rad_35;
+JRadioButton rad_13, rad_13_1,rad_15, rad_30, rad_35;
 /*Устанавливает название окна в form2*/
 form2.setTitle("Калькулятор НДФЛ");
 /*Указывает ширину и высоту в form2.*/
