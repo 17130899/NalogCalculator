@@ -240,7 +240,7 @@ sum_ok = new JTextField();
 sum_ok.addKeyListener(new KeyAdapter() {
     public void keyTyped(KeyEvent e) { 
     	JDialog Q = new JDialog();
-        if (sum_ok.getText().length() >= 10 ) { // limit textfield to 3 characters
+        if (sum_ok.getText().length() >= 10 ) { 
             e.consume(); 
         }
     }  
@@ -627,31 +627,71 @@ calc3 = new JButton("В меню");
 calc4 = new JButton("Изменить"); 
 calc3.setBackground(Color.GREEN);
 /*Текстовое поле, в которое пользователь вводит данные */
-sum_ok = new JTextField(Double.toString(a4)); 
+sum_ok = new JTextField(Double.toString(a4));
+/*ограничение на количество введенных символов*/
+sum_ok.addKeyListener(new KeyAdapter() {
+    public void keyTyped(KeyEvent e) { 
+        if (sum_ok.getText().length() >= 2 ) {
+            e.consume(); 
+        }
+    }  
+}); 
 /*Выравнивание текста по центру*/
 sum_ok.setHorizontalAlignment(JTextField.CENTER);
 /*Установка внутренних отступов для текстового поля (2 - верхний отступ, 5 - левый, 2 - нижний, 5 - правый)*/
 sum_ok.setMargin(new Insets(2, 5, 2, 5)); 
 /*Текстовое поле, в которое пользователь вводит данные */
-sum_ok1 = new JTextField(Double.toString(a1)); 
+sum_ok1 = new JTextField(Double.toString(a1));
+/*ограничение на количество введенных символов*/
+sum_ok1.addKeyListener(new KeyAdapter() {
+    public void keyTyped(KeyEvent e) { 
+        if (sum_ok1.getText().length() >= 2 ) {
+            e.consume(); 
+        }
+    }  
+});
 /*Выравнивание текста по центру*/
 sum_ok1.setHorizontalAlignment(JTextField.CENTER); 
 /*Установка внутренних отступов для текстового поля (2 - верхний отступ, 5 - левый, 2 - нижний, 5 - правый)*/
 sum_ok1.setMargin(new Insets(2, 5, 2, 5)); 
 /*Текстовое поле, в которое пользователь вводит данные */
-sum_ok2 = new JTextField(Double.toString(a)); 
+sum_ok2 = new JTextField(Double.toString(a));
+/*ограничение на количество введенных символов*/
+sum_ok2.addKeyListener(new KeyAdapter() {
+    public void keyTyped(KeyEvent e) { 
+        if (sum_ok2.getText().length() >= 2 ) {
+            e.consume(); 
+        }
+    }  
+});
 /*Выравнивание текста по центру*/
 sum_ok2.setHorizontalAlignment(JTextField.CENTER); 
 /*Установка внутренних отступов для текстового поля (2 - верхний отступ, 5 - левый, 2 - нижний, 5 - правый)*/
 sum_ok2.setMargin(new Insets(2, 5, 2, 5)); 
 /*Текстовое поле, в которое пользователь вводит данные */
-sum_ok3 = new JTextField(Double.toString(a2)); 
+sum_ok3 = new JTextField(Double.toString(a2));
+/*ограничение на количество введенных символов*/
+sum_ok3.addKeyListener(new KeyAdapter() {
+    public void keyTyped(KeyEvent e) { 
+        if (sum_ok3.getText().length() >= 2 ) {
+            e.consume(); 
+        }
+    }  
+});
 /*Выравнивание текста по центру*/
 sum_ok3.setHorizontalAlignment(JTextField.CENTER); 
 /*Установка внутренних отступов для текстового поля (2 - верхний отступ, 5 - левый, 2 - нижний, 5 - правый)*/
 sum_ok3.setMargin(new Insets(2, 5, 2, 5)); 
 /*Текстовое поле, в которое пользователь вводит данные */
-sum_ok4 = new JTextField(Double.toString(a3)); 
+sum_ok4 = new JTextField(Double.toString(a3));
+/*ограничение на количество введенных символов*/
+sum_ok4.addKeyListener(new KeyAdapter() {
+    public void keyTyped(KeyEvent e) { 
+        if (sum_ok4.getText().length() >= 2 ) {
+            e.consume(); 
+        }
+    }  
+});
 /*Выравнивание текста по центру*/
 sum_ok4.setHorizontalAlignment(JTextField.CENTER); 
 /*Установка внутренних отступов для текстового поля (2 - верхний отступ, 5 - левый, 2 - нижний, 5 - правый)*/
