@@ -1,4 +1,4 @@
-package NalogC;
+package nalog.nak;
 public class tax {
 	public double calcTax(double d,double pr) {
 	/*переменная tax хранит результат вычисления */
